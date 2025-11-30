@@ -13,11 +13,8 @@ def main():
     df = load_data()
 
     split = basic_preprocess(df)
-    if isinstance(split, tuple) and len(split) == 4:
-        X_train, X_test, y_train, y_test = split
-    else:
-        raise RuntimeError("Dataset missing 'Survived' column or preprocess returned X only.")
-
+    X_train, X_test, y_train, y_test = split
+    
     model = build_model()
     model.fit(X_train, y_train)
 
