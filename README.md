@@ -1,9 +1,22 @@
-# Titanic Survival Prediction (Machine Learning Project)
+# Titanic-Insights-ML
 
-This project builds a complete end-to-end Machine Learning pipeline on the popular Titanic dataset.  
-It includes data preprocessing, feature engineering, model training, evaluation, and visualization of results.
+🚢 **Titanic Survival Predictor** — a small friendly ML demo that trains a simple model on the Titanic dataset and exposes a Streamlit UI to try predictions.
+
+**Live demo:** https://titanic-insights-ml-9o5fh88vhxgshekjtil9gt.streamlit.app/  
+(Hosted on Streamlit Community Cloud — free demo)
 
 ---
+
+## What this project does (short)
+This repo:
+- Loads the classic Titanic dataset.
+- Performs basic preprocessing (fill missing, extract title, create family features, one-hot encoding).
+- Trains a simple classifier and evaluates it.
+- Saves evaluation figures (confusion matrix & feature importance).
+- Provides a lightweight **Streamlit app** (`app.py`) so anyone can type passenger attributes and get a predicted survival probability.
+
+It is a demo for learning model pipelines + deployment.
+
 
 ##  Project Highlights
 
@@ -77,7 +90,7 @@ pip install -r requirements.txt
 
 python -m src.train
 
-
+python -m streamlit run app.py
 
 This will:
 - preprocess the dataset  
