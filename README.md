@@ -45,7 +45,7 @@ Titanic-Insights-ML/
 │ ├── confusion_matrix.png
 │ └── feature_importance.png
 │
-├── models/ → (ignored in Git) contains model.pkl after training
+├── app.py
 ├── titanic.csv
 ├── requirements.txt
 └── .gitignore
