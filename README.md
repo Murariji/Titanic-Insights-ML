@@ -66,7 +66,7 @@ Titanic-Insights-ML/
 ---
 
 ## 🛠️ How to Run Locally (Windows PowerShell)
-git clone -b tidy-titanic https://github.com/Murariji/Titanic-Insights-ML.git
+git clone https://github.com/Murariji/Titanic-Insights-ML.git
 
 cd Titanic-Insights-ML
 
@@ -97,7 +97,7 @@ This will:
 
 ---
 
-## 📘 What This Project Demonstrates (Good for Interviews)
+## 📘 What This Project Demonstrates 
 
 - Understanding of ML workflow  
 - Ability to implement clean modular code (src/ structure)  
@@ -117,7 +117,7 @@ This will:
 ---
 
 ## ✨ About This Repo
-This branch (`tidy-titanic`) contains the clean, production-ready version of the Titanic ML pipeline with proper structure, results, and documentation.
+This branch  contains the clean, production-ready version of the Titanic ML pipeline with proper structure, results, and documentation.
 
 
 
