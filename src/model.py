@@ -3,8 +3,7 @@ import joblib
 from pathlib import Path
 
 # model will be saved in /models/model.pkl
-MODEL_PATH = Path(__file__).resolve().parents[1] / "model.pkl"
-
+MODEL_PATH = Path(__file__).resolve().parents[1] / "models" / "model.pkl"
 def build_model():
     return RandomForestClassifier(
         n_estimators=150,
