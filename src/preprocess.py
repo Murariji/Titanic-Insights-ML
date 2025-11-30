@@ -58,7 +58,6 @@ def basic_preprocess(df: pd.DataFrame):
     df = pd.get_dummies(df, columns=cat_cols, drop_first=True)
 
     features = []
-
     for col in ["Pclass", "Age", "Fare", "FamilySize", "IsAlone"]:
         if col in df.columns:
             features.append(col)
@@ -69,3 +68,6 @@ def basic_preprocess(df: pd.DataFrame):
 
     if len(features) == 0:
         raise ValueError("No valid features created. Columns: " + str(df.columns.tolist()))
+
+    X = df[features]
+    return train_test_split(X, y, test_size=0.2, random_state=42)
